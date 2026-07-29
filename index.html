@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAVANA - Build. Launch. Scale. | Digital Project Development Platform</title>
+  <meta name="description" content="The all-in-one platform to build, launch, and scale digital projects with powerful tools, seamless collaboration, and unlimited possibilities.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SITE HEADER / NAVBAR -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="index.html" class="brand-logo" id="brand-logo">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="50" cy="50" r="44" stroke-width="5" />
+            <line x1="50" y1="85" x2="50" y2="21" />
+            <path d="M 50 85 C 22 70 20 45 50 21 C 80 45 78 70 50 85 Z" />
+            <line x1="50" y1="36" x2="31" y2="52" />
+            <line x1="50" y1="49" x2="33" y2="65" />
+            <line x1="50" y1="36" x2="69" y2="52" />
+            <line x1="50" y1="49" x2="67" y2="65" />
+          </svg>
+        </div>
+        <span>SAVANA</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+          <li><a href="tokenomics.html" class="nav-link">Token Utility</a></li>
+          <li><a href="roadmap.html" class="nav-link">Roadmap</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="btn-login" id="open-login-btn">Log in</button>
+        <button class="btn-primary" id="open-signup-btn">Get Started</button>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <div class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-wrapper" id="hero">
+      <canvas id="hero-canvas" class="hero-bg-canvas"></canvas>
+      <div class="hero-image-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <!-- Subtitle / Badge -->
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            DIGITAL PROJECT DEVELOPMENT PLATFORM
+          </div>
+
+          <!-- Main Title & Tagline -->
+          <h1 class="hero-title">
+            <span>SAVANA</span>
+            <span>Build. Launch.</span>
+            <span>Scale.</span>
+          </h1>
+
+          <!-- Description -->
+          <p class="hero-description">
+            The all-in-one platform to build, launch, and scale digital projects with powerful tools, seamless collaboration, and unlimited possibilities.
+          </p>
+
+          <!-- Buttons -->
+          <div class="hero-actions">
+            <button class="btn-hero-primary trigger-auth" data-action="Get Started">
+              Get Started
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="how-it-works.html" class="btn-hero-secondary">
+              Explore How It Works
+            </a>
+          </div>
+
+          <!-- Feature Callouts (3 Badges) -->
+          <div class="hero-features">
+            <!-- Lightning Fast -->
+            <div class="feature-badge-item">
+              <div class="feature-icon-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="feature-badge-title">Lightning Fast</h3>
+              <p class="feature-badge-desc">Build and deploy faster</p>
+            </div>
+
+            <!-- Scalable -->
+            <div class="feature-badge-item">
+              <div class="feature-icon-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="feature-badge-title">Scalable</h3>
+              <p class="feature-badge-desc">Infrastructure that grows with you</p>
+            </div>
+
+            <!-- Secure -->
+            <div class="feature-badge-item">
+              <div class="feature-icon-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                  <path d="M12 11v4"></path>
+                </svg>
+              </div>
+              <h3 class="feature-badge-title">Secure</h3>
+              <p class="feature-badge-desc">Enterprise-grade security</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM KEYWORDS BADGES -->
+    <section class="keywords-section">
+      <div class="container">
+        <div class="keywords-cloud">
+          <span class="keyword-badge">Digital Development</span>
+          <span class="keyword-badge">AI Workspace</span>
+          <span class="keyword-badge">Innovation Platform</span>
+          <span class="keyword-badge">Smart Collaboration</span>
+          <span class="keyword-badge">Project Management</span>
+          <span class="keyword-badge">Cloud Infrastructure</span>
+          <span class="keyword-badge">Intelligent Automation</span>
+          <span class="keyword-badge">Developer Ecosystem</span>
+          <span class="keyword-badge">Digital Productivity</span>
+          <span class="keyword-badge">Scalable Solutions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION SECTION -->
+    <section class="section-intro" id="platform">
+      <div class="container">
+        <div class="intro-grid">
+          
+          <!-- Text Column -->
+          <div class="intro-text-content">
+            <h2 class="section-title">Introduction</h2>
+            
+            <p>SAVANA is a next-generation digital development platform designed to simplify the creation, management, and growth of modern digital projects.</p>
+            
+            <p>By integrating intelligent development tools, collaborative workspaces, and scalable infrastructure into a unified ecosystem, SAVANA empowers creators, startups, developers, and enterprises to transform ideas into production-ready solutions faster than ever.</p>
+            
+            <p>Whether building AI applications, digital products, decentralized services, SaaS platforms, creative content, or enterprise software, SAVANA provides the environment where innovation can move seamlessly from concept to deployment.</p>
+            
+            <p>Rather than being just another development platform, SAVANA serves as a complete innovation ecosystem where teams can collaborate, automate workflows, manage digital assets, deploy applications, and continuously evolve their projects through intelligent technologies.</p>
+
+            <!-- Core Concept Box -->
+            <div class="concept-box">
+              <h3 class="concept-title">Core Concept</h3>
+              <p style="margin:0; font-size:0.92rem; color:var(--color-text-dark-main); line-height:1.7;">
+                SAVANA is an intelligent ecosystem where ideas become digital products through integrated development, collaboration, automation, and scalable infrastructure. It connects creators, developers, businesses, and innovative technologies into one seamless platform, enabling faster development cycles, smarter workflows, and continuous digital innovation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Globe Graphic Column -->
+          <div class="intro-visual-wrapper">
+            <div class="orb-display-card">
+              <!-- Outer CSS Rings & Nodes -->
+              <div class="orbital-ring ring-1"></div>
+              <div class="orbital-ring ring-2"></div>
+              <div class="orbital-node" style="top: 10%; right: 25%;"></div>
+              <div class="orbital-node coral" style="bottom: 15%; right: 10%;"></div>
+              <div class="orbital-node" style="bottom: 25%; left: 8%;"></div>
+              <div class="orbital-node coral" style="top: 30%; left: 5%;"></div>
+              
+              <!-- Orbital Globe Orb Image -->
+              <img src="assets/globe_orb.png" alt="SAVANA Ecosystem Orbital Orb" class="orb-img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION SECTION -->
+    <section class="section-vision">
+      <div class="container">
+        <div class="vision-card">
+          <div class="vision-bg-art"></div>
+          <div class="vision-content">
+            <h2 class="section-title">Vision</h2>
+            <p class="vision-text">
+              To become the universal platform where every digital idea can be designed, developed, launched, and scaled without limits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAVANA CORE CAPABILITIES -->
+    <section class="section-capabilities">
+      <div class="container">
+        <div class="capabilities-header">
+          <h2 class="section-title">SAVANA Core Capabilities</h2>
+        </div>
+
+        <div class="capabilities-grid">
+          
+          <!-- 1. Intelligent Development Tools -->
+          <div class="capability-card" data-capability="Intelligent Development Tools">
+            <div class="capability-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="capability-body">
+              <h3 class="capability-title">Intelligent Development Tools</h3>
+              <p class="capability-desc">Powerful, flexible, and modern tools to build any digital solution efficiently.</p>
+            </div>
+          </div>
+
+          <!-- 2. Collaborative Workspaces -->
+          <div class="capability-card" data-capability="Collaborative Workspaces">
+            <div class="capability-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="capability-body">
+              <h3 class="capability-title">Collaborative Workspaces</h3>
+              <p class="capability-desc">Real-time collaboration for teams to plan, build, and ship together seamlessly.</p>
+            </div>
+          </div>
+
+          <!-- 3. Scalable Infrastructure -->
+          <div class="capability-card" data-capability="Scalable Infrastructure">
+            <div class="capability-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <div class="capability-body">
+              <h3 class="capability-title">Scalable Infrastructure</h3>
+              <p class="capability-desc">Robust and elastic infrastructure that grows with your project.</p>
+            </div>
+          </div>
+
+          <!-- 4. Workflow Automation -->
+          <div class="capability-card" data-capability="Workflow Automation">
+            <div class="capability-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="capability-body">
+              <h3 class="capability-title">Workflow Automation</h3>
+              <p class="capability-desc">Automate repetitive tasks and streamline your entire development lifecycle.</p>
+            </div>
+          </div>
+
+          <!-- 5. Secure & Reliable -->
+          <div class="capability-card" data-capability="Secure & Reliable">
+            <div class="capability-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="capability-body">
+              <h3 class="capability-title">Secure & Reliable</h3>
+              <p class="capability-desc">Built with security and reliability at the core to protect your ideas and users.</p>
+            </div>
+          </div>
+
+          <!-- 6. Monitor & Optimize -->
+          <div class="capability-card" data-capability="Monitor & Optimize">
+            <div class="capability-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="capability-body">
+              <h3 class="capability-title">Monitor & Optimize</h3>
+              <p class="capability-desc">Advanced analytics and insights to monitor performance and drive growth.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FROM IDEA TO IMPACT CTA BANNER -->
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-bg-artwork"></div>
+          <div class="cta-content">
+            <h2 class="cta-title">From Idea to Impact</h2>
+            <p class="cta-subtitle">Build tomorrow. Launch today. Scale endlessly.</p>
+            <button class="btn-cta-green trigger-auth" data-action="Start Your Journey">
+              Start Your Journey
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="50" cy="50" r="44" stroke-width="5" />
+                <line x1="50" y1="85" x2="50" y2="21" />
+                <path d="M 50 85 C 22 70 20 45 50 21 C 80 45 78 70 50 85 Z" />
+                <line x1="50" y1="36" x2="31" y2="52" />
+                <line x1="50" y1="49" x2="33" y2="65" />
+                <line x1="50" y1="36" x2="69" y2="52" />
+                <line x1="50" y1="49" x2="67" y2="65" />
+              </svg>
+            </div>
+            <span>SAVANA</span>
+          </a>
+          <p class="footer-tagline">
+            The next-generation digital project development platform empowering creators and enterprises worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="tokenomics.html">Token Utility</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="roadmap.html">Documentation</a></li>
+            <li><a href="how-it-works.html">API Reference</a></li>
+            <li><a href="how-it-works.html">Guides & Tutorials</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Stay Connected</h4>
+          <form class="newsletter-form" id="newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SAVANA Platform Inc. All rights reserved. Slogan: "Build. Launch. Scale."</p>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: inherit;">Privacy Policy</a>
+          <a href="#" style="color: inherit;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AUTH MODAL -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h3 class="modal-title" id="modal-title">Get Started with SAVANA</h3>
+      <p class="modal-subtitle" id="modal-subtitle">Enter your details to create your developer workspace.</p>
+      
+      <form id="auth-form">
+        <div class="form-group">
+          <label for="input-email">Email Address</label>
+          <input type="email" id="input-email" class="form-control" placeholder="name@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="input-password">Password</label>
+          <input type="password" id="input-password" class="form-control" placeholder="••••••••••••" required>
+        </div>
+        <button type="submit" class="btn-form-submit" id="modal-submit-btn">Create Free Account</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

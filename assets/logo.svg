@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Outer Frame Circle -->
+  <circle cx="50" cy="50" r="44" stroke-width="5" />
+  
+  <!-- Central Vertical Stem -->
+  <line x1="50" y1="85" x2="50" y2="21" />
+  
+  <!-- Leaf Outer Contour -->
+  <path d="M 50 85 C 22 70 20 45 50 21 C 80 45 78 70 50 85 Z" />
+  
+  <!-- Leaf Veins Left -->
+  <line x1="50" y1="36" x2="31" y2="52" />
+  <line x1="50" y1="49" x2="33" y2="65" />
+  
+  <!-- Leaf Veins Right -->
+  <line x1="50" y1="36" x2="69" y2="52" />
+  <line x1="50" y1="49" x2="67" y2="65" />
+</svg>
