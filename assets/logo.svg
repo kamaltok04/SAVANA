@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="url(#logo-grad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#2ec4b6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Frame Circle -->
+  <circle cx="50" cy="50" r="44" stroke-width="5" opacity="0.9" />
+  
+  <!-- Central Vertical Stem -->
+  <line x1="50" y1="85" x2="50" y2="21" />
+  
+  <!-- Leaf Outer Contour -->
+  <path d="M 50 85 C 22 70 20 45 50 21 C 80 45 78 70 50 85 Z" fill="url(#logo-grad)" fill-opacity="0.15" />
+  
+  <!-- Leaf Veins Left -->
+  <line x1="50" y1="36" x2="31" y2="52" />
+  <line x1="50" y1="49" x2="33" y2="65" />
+  
+  <!-- Leaf Veins Right -->
+  <line x1="50" y1="36" x2="69" y2="52" />
+  <line x1="50" y1="49" x2="67" y2="65" />
+</svg>

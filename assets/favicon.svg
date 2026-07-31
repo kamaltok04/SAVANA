@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Dark Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1b14" />
+      <stop offset="50%" stop-color="#07130e" />
+      <stop offset="100%" stop-color="#12372a" />
+    </linearGradient>
+
+    <!-- Leaf Mint Emerald Neon Gradient -->
+    <linearGradient id="leaf-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#2ec4b6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2ec4b6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle Badge -->
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="12" />
+
+  <!-- Logo Leaf Icon -->
+  <g transform="translate(56, 56) scale(4)" stroke="url(#leaf-grad)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer Frame Circle -->
+    <circle cx="50" cy="50" r="42" stroke-width="5.5" opacity="0.9" />
+    
+    <!-- Central Vertical Stem -->
+    <line x1="50" y1="83" x2="50" y2="21" stroke-width="5" />
+    
+    <!-- Leaf Outer Contour -->
+    <path d="M 50 83 C 23 69 21 45 50 21 C 79 45 77 69 50 83 Z" stroke-width="5.5" fill="url(#leaf-grad)" fill-opacity="0.18" />
+    
+    <!-- Leaf Veins Left -->
+    <line x1="50" y1="36" x2="31" y2="52" stroke-width="4.5" />
+    <line x1="50" y1="49" x2="33" y2="65" stroke-width="4.5" />
+    
+    <!-- Leaf Veins Right -->
+    <line x1="50" y1="36" x2="69" y2="52" stroke-width="4.5" />
+    <line x1="50" y1="49" x2="67" y2="65" stroke-width="4.5" />
+  </g>
+</svg>
